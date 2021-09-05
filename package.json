@@ -19,6 +19,8 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
     "prettier": "2.3.2",
     "typescript": "^4.4.2"
   },
@@ -31,7 +33,8 @@
     "format:fix": "prettier --write .",
     "check-types": "tsc --noEmit",
     "format": "prettier --write .",
-    "test-all": "npx yarn-run-all lint check-types format lint:fix"
+    "test-all": "npx yarn-run-all lint check-types format lint:fix",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +52,13 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "yarn lint",
+      "yarn format",
+      "yarn lint:fix"
     ]
   }
 }
