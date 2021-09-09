@@ -1,0 +1,13 @@
+* {
+  --font-white-color: #ffffff;
+  --font-brown-color: #7a3e14;
+
+  --ui-white-color: #ffffff;
+  --ui-gradient-color: linear-gradient(
+    180deg,
+    #9fda36 0%,
+    #98d731 52.6%,
+    #6ac20b 100%
+  );
+  --ui-border-color: rgba(0, 0, 0, 0.24);
+}

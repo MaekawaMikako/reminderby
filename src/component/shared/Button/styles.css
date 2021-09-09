@@ -1,0 +1,27 @@
+.base {
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.midium {
+  padding: 10px 0;
+  min-width: 270px;
+}
+
+.small {
+  padding: 6px 0;
+  min-width: 130px;
+}
+
+.primary {
+  background: var(--ui-gradient-color);
+  color: var(--font-white-color);
+  border-color: var(--ui-border-color);
+}
+
+.secondary {
+  background-color: var(--ui-white-color);
+  color: var(--font-brown-color);
+  border-color: currentColor;
+}
